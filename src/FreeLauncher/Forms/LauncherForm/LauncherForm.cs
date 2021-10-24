@@ -687,7 +687,7 @@ Please, check for your Internet configuration and restart the launcher.
         {
             profilesDropDownBox.Items.Clear();
             profilesListView.Items.Clear();
-            string profilesPath = Path.Combine(_configuration.McDirectory, "launcher_profiles.json");
+            string profilesPath = Path.Combine(_configuration.McLauncher, "launcher_profiles.json");
             try {
                 _profileManager =
                     ProfileManager.ParseProfile(profilesPath);
@@ -700,7 +700,7 @@ Please, check for your Internet configuration and restart the launcher.
                     string fileName = $"launcher_profiles-{LinuxTimeStamp}.bak.json";
                     AppendLog("A copy of old profile list has been created: " + fileName);
                     File.Move(profilesPath,
-                        Path.Combine(_configuration.McDirectory, fileName));
+                        Path.Combine(_configuration.McLauncher, fileName));
                 }
                 File.WriteAllText(profilesPath, new JObject {
                     {
@@ -778,7 +778,7 @@ Please, check for your Internet configuration and restart the launcher.
 
         private void SaveProfiles()
         {
-            File.WriteAllText(_configuration.McDirectory + @"\launcher_profiles.json", _profileManager.ToJson());
+            File.WriteAllText(_configuration.McLauncher + @"\launcher_profiles.json", _profileManager.ToJson());
         }
 
         private void SaveUsers()
