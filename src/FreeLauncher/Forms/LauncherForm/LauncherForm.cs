@@ -649,7 +649,7 @@ Please, check for your Internet configuration and restart the launcher.
 
         private void UpdateVersions()
         {
-            string versionsManifestPath = Path.Combine(_configuration.McVersions, @"\versions.json");
+            string versionsManifestPath = Path.Combine(_configuration.McVersions, "versions.json");
             if (_configuration.Arguments.OfflineMode) {
                 AppendLog("Unable to get new version list: offline-mode enabled.");
                 if (File.Exists(versionsManifestPath)) {
@@ -683,7 +683,7 @@ Please, check for your Internet configuration and restart the launcher.
                 AppendLog("No update found.");
                 return;
             }
-            AppendLog("Writting new list...");
+            AppendLog("Writing new list...");
             File.WriteAllText(versionsManifestPath, remoteManifest.ToString());
             _versionList = remoteManifest;
         }
@@ -692,7 +692,7 @@ Please, check for your Internet configuration and restart the launcher.
         {
             profilesDropDownBox.Items.Clear();
             profilesListView.Items.Clear();
-            string profilesPath = Path.Combine(_configuration.McDirectory, @"\launcher_profiles.json");
+            string profilesPath = Path.Combine(_configuration.McDirectory, "launcher_profiles.json");
             try {
                 _profileManager =
                     ProfileManager.ParseProfile(profilesPath);
