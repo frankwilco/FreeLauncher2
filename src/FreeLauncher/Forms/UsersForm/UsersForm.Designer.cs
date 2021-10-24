@@ -198,7 +198,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
-            this.Text = "UsersForm";
+            this.Text = "Users";
             this.ThemeName = "VisualStudio2012Dark";
             ((System.ComponentModel.ISupportInitialize)(this.UsersListControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteUserButton)).EndInit();

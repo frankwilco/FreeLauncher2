@@ -85,5 +85,11 @@
   "Error": "Ошибка",
   "Cancel": "Отмена",
   "Close": "Закрыть",
-  "Save": "Сохранить"
+  "Save": "Сохранить",
+  "NicknamePlaceholder": "Ник",
+  "ProfileIDHeader": "Идентификатор",
+  "ProfileNameHeader": "Название",
+  "ProfileVersionHeader": "Версия",
+  "ProfileConfigHeader": "Конфигурация релизов",
+  "ProfileVisibilityHeader": "Видимость лаунчера"
 }

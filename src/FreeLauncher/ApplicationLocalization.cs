@@ -26,6 +26,7 @@
         public string AddProfileButtonText { get; set; } = "Добавить профиль";
         public string EditProfileButtonText { get; set; } = "Изменить профиль";
         public string SetToClipboardButtonText { get; set; } = "Скопировать в буфер";
+        public string NicknamePlaceholder { get; set; } = "Ник";
 
         #endregion
 
@@ -50,6 +51,13 @@
 
         public string MoveUp { get; set; } = "Переместить вверх";
         public string MoveDown { get; set; } = "Переместить вниз";
+
+        public string ProfileIDHeader { get; set; } = "Идентификатор";
+        public string ProfileNameHeader { get; set; } = "Название";
+        public string ProfileVersionHeader { get; set; } = "Версия";
+        public string ProfileConfigHeader { get; set; } = "Конфигурация релизов";
+        public string ProfileVisibilityHeader { get; set; } = "Видимость лаунчера";
+
         #endregion
 
         #region About Tab

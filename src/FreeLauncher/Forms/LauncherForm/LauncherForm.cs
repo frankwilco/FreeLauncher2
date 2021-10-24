@@ -706,9 +706,9 @@ Please, check for your Internet configuration and restart the launcher.
                     {
                         "profiles", new JObject {
                             {
-                                ProductName, new JObject {
+                                "Default", new JObject {
                                     {
-                                        "name", ProductName
+                                        "name", "Default"
                                     }, {
                                         "allowedReleaseTypes", new JArray {
                                             "other"
@@ -740,7 +740,7 @@ Please, check for your Internet configuration and restart the launcher.
                             }
                         }
                     }, {
-                        "selectedProfile", ProductName
+                        "selectedProfile", "Default"
                     }
                 }.ToString());
                 _profileManager = ProfileManager.ParseProfile(profilesPath);
@@ -1090,6 +1090,12 @@ Please, check for your Internet configuration and restart the launcher.
             versionsListView.Columns[4].HeaderText = localization.AssetsIndexHeader;
             versionsListView.Columns[5].HeaderText = localization.DependencyHeader;
 
+            profilesListView.Columns[0].HeaderText = localization.ProfileIDHeader;
+            profilesListView.Columns[1].HeaderText = localization.ProfileNameHeader;
+            profilesListView.Columns[2].HeaderText = localization.ProfileVersionHeader;
+            profilesListView.Columns[3].HeaderText = localization.ProfileConfigHeader;
+            profilesListView.Columns[4].HeaderText = localization.ProfileVisibilityHeader;
+
             DevInfoLabel.Text = localization.DevInfo;
             GratitudesLabel.Text = localization.GratitudesText;
             GratitudesDescLabel.Text = localization.GratitudesDescription;
@@ -1103,6 +1109,8 @@ Please, check for your Internet configuration and restart the launcher.
             LoggerGroupBox.Text = localization.LoggerSettingsTitle;
             EnableMinecraftLogging.Text = localization.EnableMinecraftLoggingText;
             CloseGameOutput.Text = localization.CloseGameOutputText;
+
+            NicknameDropDownList.NullText = localization.NicknamePlaceholder;
         }
 
         private void UpdateVersionListView()
