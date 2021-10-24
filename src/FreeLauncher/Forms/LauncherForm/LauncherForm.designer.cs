@@ -102,7 +102,6 @@ namespace FreeLauncher.Forms
             this.profilesDropDownBox = new Telerik.WinControls.UI.RadDropDownList();
             this.EditProfileButton = new Telerik.WinControls.UI.RadButton();
             this.AddProfile = new Telerik.WinControls.UI.RadButton();
-            this.langWikiLink = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.mainPageView)).BeginInit();
             this.mainPageView.SuspendLayout();
             this.News.SuspendLayout();
@@ -902,27 +901,11 @@ namespace FreeLauncher.Forms
             this.AddProfile.ThemeName = "VisualStudio2012Dark";
             this.AddProfile.Click += new System.EventHandler(this.AddProfile_Click);
             // 
-            // langWikiLink
-            // 
-            this.langWikiLink.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(105)))), ((int)(((byte)(175)))));
-            this.langWikiLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.langWikiLink.AutoSize = true;
-            this.langWikiLink.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.langWikiLink.LinkColor = System.Drawing.Color.Gray;
-            this.langWikiLink.Location = new System.Drawing.Point(758, 5);
-            this.langWikiLink.Name = "langWikiLink";
-            this.langWikiLink.Size = new System.Drawing.Size(94, 13);
-            this.langWikiLink.TabIndex = 5;
-            this.langWikiLink.TabStop = true;
-            this.langWikiLink.Text = "Having troubles?";
-            this.langWikiLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.langWikiLink_LinkClicked);
-            // 
             // LauncherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 446);
-            this.Controls.Add(this.langWikiLink);
             this.Controls.Add(this.mainPageView);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.radPanel1);
@@ -1057,7 +1040,6 @@ namespace FreeLauncher.Forms
         private RadDropDownList LangDropDownList;
         public RadCheckBox DownloadAssetsBox;
         private Label CopyrightInfoLabel;
-        private LinkLabel langWikiLink;
         private RadLabel FreeLauncherLicenseText;
         private RadPageViewPage EditProfiles;
         private RadListView profilesListView;
