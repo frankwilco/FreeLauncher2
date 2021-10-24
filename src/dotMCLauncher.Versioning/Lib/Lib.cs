@@ -26,10 +26,10 @@ namespace dotMCLauncher.Versioning
         public string Url { get; set; }
 
         [JsonProperty("natives")]
-        private JObject _natives;
+        private JObject _natives = null;
 
         [JsonProperty("rules")]
-        private List<Rule> _rules;
+        private List<Rule> _rules = null;
 
         /// <summary>
         /// Returns processed library name if one's a native and supports Windows. Returns null, if not.
