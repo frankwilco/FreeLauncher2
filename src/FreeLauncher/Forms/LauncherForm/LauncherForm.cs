@@ -424,7 +424,7 @@ Please, check for your Internet configuration and restart the launcher.
                             }, {
                                 "launcher_version", Application.ProductVersion
                             }, {
-                                "classpath", libraries.Contains(' ') ? $"\"{libraries}\"" : libraries
+                                "classpath", libraries
                             }
                         };
                         string gameArguments, jvmArguments;
