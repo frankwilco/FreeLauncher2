@@ -299,8 +299,8 @@ namespace FreeLauncher.Forms
             // 
             // versionsListView
             // 
-            this.versionsListView.AllowColumnReorder = false;
-            this.versionsListView.AllowColumnResize = false;
+            this.versionsListView.AllowColumnReorder = true;
+            this.versionsListView.AllowColumnResize = true;
             this.versionsListView.AllowEdit = false;
             this.versionsListView.AllowRemove = false;
             this.versionsListView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -352,8 +352,8 @@ namespace FreeLauncher.Forms
             // 
             // profilesListView
             // 
-            this.profilesListView.AllowColumnReorder = false;
-            this.profilesListView.AllowColumnResize = false;
+            this.profilesListView.AllowColumnReorder = true;
+            this.profilesListView.AllowColumnResize = true;
             this.profilesListView.AllowEdit = false;
             this.profilesListView.AllowRemove = false;
             this.profilesListView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
