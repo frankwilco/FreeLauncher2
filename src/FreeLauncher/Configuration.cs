@@ -73,7 +73,7 @@ namespace FreeLauncher
             if (ApplicationConfiguration.SelectedLanguage == "en_UK") {
                 Localization = LocalizationsList["en_UK"];
             }
-            var langsDirectory = new DirectoryInfo(Path.Combine(Application.StartupPath + @"\config\langs\"));
+            var langsDirectory = new DirectoryInfo(Path.Combine(Application.StartupPath + @"\locale\"));
             if (!langsDirectory.Exists) {
                 return;
             }

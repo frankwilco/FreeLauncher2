@@ -15,7 +15,7 @@ DEL /Q "%PROJECTDIR%\Properties\AssemblyInfo.cs"
 MOVE "%PROJECTDIR%\Properties\AssemblyInfo.cs.tmp" "%PROJECTDIR%\Properties\AssemblyInfo.cs"
 
 ECHO Step 2/4: Copying language files...
-XCOPY /S /Y /F "%PROJECTDIR%\Translations\*" "%TARGETDIR%\config\langs\"
+XCOPY /S /Y /F "%PROJECTDIR%\Translations\*" "%TARGETDIR%\locale\"
 
 IF NOT "%CONFIGURATION%" == "Release" (
 	ECHO Detected non-release configuration.
@@ -31,7 +31,7 @@ IF %ERRORLEVEL% NEQ 0 (
 	ECHO 7z not found being installed.
 	GOTO FINISH
 )
-7z a "%TARGETDIR%\FreeLauncher.zip" "%TARGETDIR%\FreeLauncher.exe" "%TARGETDIR%\config\langs\" -r
+7z a "%TARGETDIR%\FreeLauncher.zip" "%TARGETDIR%\FreeLauncher.exe" "%TARGETDIR%\locale\" -r
 IF NOT DEFINED DLLS (
 	GOTO FINISH
 )
